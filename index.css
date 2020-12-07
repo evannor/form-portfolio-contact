@@ -1,10 +1,19 @@
+/* Variables */
+:root {
+  --main-bg-color: grey;
+  --main-txt-color: white;
+  /* --main-font-family: "Roboto Mono", monospace; */
+  --main-font-size: 18px;
+  --main-primary: #d8eeeb;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: var(--main-bg-color);
-  color: var(--main-txt-color);
+  background-color: var(--main-txt-color);
+  color: black;
   font-family: var(--main-font-family);
   font-size: var(--main-font-size);
 }
@@ -20,6 +29,10 @@ footer {
 }
 footer {
   padding-top: 27px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 ul {
   list-style: none;
@@ -29,6 +42,37 @@ ul {
   align-items: center;
   padding-inline-start: 0;
   padding-right: 27px;
+}
+form {
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 9px;
+  padding: 36px 0;
+}
+label {
+  margin: 9px 0;
+}
+button {
+  border: 0;
+  line-height: 2.5;
+  max-width: 75%;
+  width: 50%;
+  font-size: var(--main-font-size);
+  letter-spacing: 0.1rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px var(--main-bg-color);
+  border-radius: 6px;
+  margin-top: 27px;
+}
+input,
+textarea {
+  border: 0;
+  border-radius: 6px;
 }
 
 /* Added from previously made portfolio form */
@@ -55,6 +99,10 @@ ul {
 .btn-menu,
 .menu-dash {
   display: none;
+}
+.container {
+  margin: 36px auto;
+  text-align: center;
 }
 
 /* Media Queries */
